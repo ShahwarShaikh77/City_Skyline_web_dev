@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>City Skyline</title>
+  </head>
+  <body>
+    <!--Create a div element in the body with a class of background-buildings. 
+        This will be a container for a group of buildings.-->
+    <!--Squeeze buildings together by adding two empty div elements to the top of the background-buildings 
+            element, two more at the bottom of it, and one more in between .bb3 and .bb4. These will be 
+            added as evenly-spaced elements across the container, effectively moving the buildings closer 
+            to the center.-->
+    <div class="background-buildings sky">
+      <!--Added sky class to make a background of the citys skyline-->
+      <div></div>
+      <!--Empty div for squeezing-->
+      <div></div>
+      <!--Nest a div with a class of bb1 in the background buildings container. 
+            Open your styles.css file, and give .bb1 a width of 10% and height of 70%. "bb" stands for 
+            "background building", this will be your first building.-->
+      <div class="bb1 building-wrap">
+        <!--Nest four div elements in the .bb1 container. Give them the classes bb1a, 
+        bb1b, bb1c, and bb1d in that order. This building will have four sections. added new class bb1-window-->
+        <div class="bb1a bb1-window"></div>
+        <div class="bb1b bb1-window"></div>
+        <div class="bb1c bb1-window"></div>
+        <div class="bb1d"></div>
+      </div>
+      <!--This container will have three buildings-->
+      <div class="bb2">
+        <!--Nest two new div elements within .bb2, give them the classes of bb2a and bb2b, in that order. These will be two sections for this building-->
+        <div class="bb2a"></div>
+        <div class="bb2b"></div>
+      </div>
+      <div class="bb3"></div>
+      <div></div>
+      <!--Empty div for squeezing-->
+      <div class="bb4 building-wrap">
+        <!-- next building will have three sections. Nest three div elements within .bb4. Give them the classes of bb4a, bb4b and bb4c in that order.-->
+        <div class="bb4a"></div>
+        <div class="bb4b"></div>
+        <div class="bb4c window-wrap">
+          <!--This will be the windows for this building-->
+          <div class="bb4-window"></div>
+          <div class="bb4-window"></div>
+          <div class="bb4-window"></div>
+          <div class="bb4-window"></div>
+        </div>
+      </div>
+      <div></div>
+      <!--Empty div for squeezing-->
+      <div></div>
+    </div>
+    <!--Create a new div below the background-buildings element and give it a class of 
+        foreground-buildings. This will be another container for more buildings.-->
+    <div class="foreground-buildings">
+      <div></div>
+      <div></div>
+      <!--Nest six div elements within .foreground-buildings and give them the classes of fb1 
+            through fb6 in that order. "fb" stands for "foreground building". These will be six 
+            more buildings for the foreground.-->
+      <div class="fb1 building-wrap">
+        <div class="fb1a"></div>
+        <div class="fb1b"></div>
+        <div class="fb1c"></div>
+      </div>
+      <div class="fb2">
+        <div class="fb2a"></div>
+        <div class="fb2b window-wrap">
+          <!--This div will add the window of this building fb2b-->
+          <div class="fb2-window"></div>
+          <div class="fb2-window"></div>
+          <div class="fb2-window"></div>
+        </div>
+      </div>
+      <div></div>
+      <div class="fb3 building-wrap">
+        <div class="fb3a window-wrap">
+          <div class="fb3-window"></div>
+          <div class="fb3-window"></div>
+          <div class="fb3-window"></div>
+        </div>
+        <div class="fb3b"></div>
+        <div class="fb3a"></div>
+        <div class="fb3b"></div>
+      </div>
+      <div class="fb4">
+        <div class="fb4a"></div>
+        <div class="fb4b">
+          <div class="fb4-window"></div>
+          <div class="fb4-window"></div>
+          <div class="fb4-window"></div>
+          <div class="fb4-window"></div>
+          <div class="fb4-window"></div>
+          <div class="fb4-window"></div>
+        </div>
+      </div>
+      <div class="fb5"></div>
+      <div class="fb6"></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
